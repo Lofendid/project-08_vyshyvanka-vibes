@@ -8,7 +8,7 @@
 */
 
 .presentation .section-title {
-    color: var(--yellow-color)
+    color: var(--yellow-color);
 }
 
 /* Приклад як використати змінений під себе common клас, коли маємо 2 класи на 1 елементі (
