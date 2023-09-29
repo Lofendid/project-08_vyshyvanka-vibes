@@ -24,7 +24,7 @@
 @import url('./menu.css');
 
 /* For presentation */
-/* @import url('./presentation'); */
+@import url('./presentation');
 
 :root {
   font-family: 'Manrope', sans-serif;

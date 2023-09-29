@@ -2,7 +2,7 @@
 /* Приклад як використати змінений під себе common клас, щоб він поширювався тільки на нащадків елемента
 
 <section class="presentation">
-    <h2 class="section-title">Hey,Arnold!</h2>
+    <h2 class="section-title">Hey, Arnold!</h2>
 </section>
 
 */
@@ -11,7 +11,11 @@
     color: var(--yellow-color)
 }
 
-/* Приклад як використати змінений під себе common клас, коли маємо 2 класи на 1 елементі (class="presentation container") */
+/* Приклад як використати змінений під себе common клас, коли маємо 2 класи на 1 елементі (
+    
+<p class="presentation container">Hey, Arnold!</p>
+
+*/
 
 .presentation.container {
     background: #505050;
