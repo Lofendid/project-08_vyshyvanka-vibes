@@ -4,21 +4,58 @@
   | default @import url()
   |============================
 */
+
+/*                                Font                                    */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+/*                               Styles                                   */
+
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./utils.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  font-family: 'Manrope', sans-serif;
+  color: var(--text-color);
+  font-size: var(--regular-S-font);
+  font-weight: var(--regular-weight);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  background: var(--black-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+/*          Variables         */
+
+
+/* Colors */
+
+  --text-color: rgba(252, 249, 249, 0.40);
+  --placeholder-text-color: rgba(252, 249, 249, 0.50);
+  --black-color: #1C2225;
+  --white-color: #FCF9F9;
+  --yellow-color: #ECD979;
+
+/* Text sizes */
+
+  --extra-large-font: 64px;
+  --large-font: 54px;
+  --big-font: 44px;
+  --mid-font: 32px;
+  --comment-name-font: 20px;
+  --regular-L-font: 18px;
+  --regular-M-font: 16px;
+  --regular-S-font: 14px;
+  --small-font: 12px;
+
+/* Font weight */
+
+  --semi-bold-weight: 600;
+  --bold-weight: 500;
+  --regular-weight: 400;
 }
