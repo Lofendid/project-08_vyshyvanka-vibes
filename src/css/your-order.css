@@ -1,3 +1,188 @@
-.container-main-order {
+/* mobile-version */
+.section-order {
+}
+.container {
+  max-width: 375px;
+  padding: 20px;
+  padding-top: 80px;
+}
+.img-shirt {
+  display: none;
+}
+.title-order {
+  font-family: 'Manrope', sans-serif;
+  color: var(--white-color);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.37;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+.span-order {
+  color: var(--yellow-color);
+}
+.container-input-one-order {
+  margin-bottom: 20px;
+}
+.input-order {
+  background-color: transparent;
+  width: 335px;
+  height: 45px;
+  border: solid 1px;
+  border-radius: 15px;
+  border-color: rgba(252, 249, 249, 0.4);
+}
+.input-order::placeholder {
+  padding-left: 16px;
+  font-size: 14px;
+  color: rgba(252, 249, 249, 0.4);
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+}
+
+.container-textarea {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.textarea {
+  background-color: transparent;
+  resize: none;
+  width: 335px;
+  height: 196px;
+  border: solid 1px;
+  border-radius: 8px;
+  border-color: rgba(252, 249, 249, 0.4);
+}
+.textarea::placeholder {
+  color: rgba(252, 249, 249, 0.4);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Manrope', sans-serif;
+}
+.button-form {
   display: flex;
+  width: 130px;
+  height: 49px;
+  border: solid 1px;
+  border-radius: 15px;
+  border-color: rgba(252, 249, 249, 0.4);
+  color: var(--white-color);
+  margin: 0 auto;
+  align-items: center;
+  padding-left: 36px;
+  padding-right: 37px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.37;
+  letter-spacing: -0.03em;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.container-icon {
+  padding-left: 10px;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-bottom: 79px;
+    padding-top: 100px;
+    padding-right: 32px;
+  }
+  .img-shirt {
+    display: none;
+  }
+  .title-order {
+    font-family: 'Manrope', sans-serif;
+    color: var(--white-color);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 58px;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+    width: 542px;
+    height: 174px;
+  }
+  .span-order {
+    color: var(--yellow-color);
+  }
+  .container-input-one-order {
+    margin-bottom: 20px;
+  }
+  .input-order {
+    background-color: transparent;
+    width: 508px;
+    height: 50px;
+    border: solid 1px;
+    border-radius: 15px;
+    border-color: rgba(252, 249, 249, 0.4);
+  }
+  .input-order::placeholder {
+    padding-left: 16px;
+    font-size: 14px;
+    color: rgba(252, 249, 249, 0.4);
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .container-textarea {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .textarea {
+    background-color: transparent;
+    resize: none;
+    width: 508px;
+    height: 196px;
+    border: solid 1px;
+    border-radius: 8px;
+    border-color: rgba(252, 249, 249, 0.4);
+  }
+  .textarea::placeholder {
+    color: rgba(252, 249, 249, 0.4);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+  }
+  .button-form {
+    width: 130px;
+    height: 49px;
+    border: solid 1px;
+    border-radius: 15px;
+    border-color: rgba(252, 249, 249, 0.4);
+    color: var(--white-color);
+    padding-left: 36px;
+    padding-right: 37px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.37;
+    letter-spacing: -0.03em;
+    background-color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 100px;
+  }
+
+  .container-icon {
+    padding-left: 10px;
+  }
+  .container-shirt {
+    padding-left: 80px;
+  }
+  .img-shirt {
+    display: flex;
+    border: solid 1px;
+    border-radius: 4px;
+    width: 638px;
+    height: 521px;
+  }
+  .textura {
+    position: absolute;
+  }
 }
