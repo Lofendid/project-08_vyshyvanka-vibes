@@ -69,4 +69,8 @@
   --semi-bold-weight: 600;
   --bold-weight: 500;
   --regular-weight: 400;
+
+/* Standart letter spacing */
+
+  --letter-s: -0.03em;
 }
