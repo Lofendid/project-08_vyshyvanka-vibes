@@ -273,4 +273,110 @@ focus {
     border: solid 1px;
     border-radius: 4px;
   }
+  .input-order::placeholder {
+    padding-left: 16px;
+    font-size: 16px;
+    color: rgba(252, 249, 249, 0.4);
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+  }
+  .textarea::placeholder {
+    color: rgba(252, 249, 249, 0.4);
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+  }
+  .btn {
+    height: 49px;
+    border: solid 1px;
+    border-radius: 15px;
+    border-color: rgba(252, 249, 249, 0.1);
+    color: var(--white-color);
+    padding: 14px 36px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.37;
+    letter-spacing: -0.04em;
+    background-color: transparent;
+    text-transform: uppercase;
+    display: inline-flex;
+    transition: border 200ms ease-in-out;
+    margin-bottom: 100px;
+  }
+  .btn:hover,
+  focus {
+    border-color: var(--yellow-color);
+    outline: transparent;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-order {
+    background-image: url(/img/your-order/girl-desk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192pdi),
+    (min-resolution: 2dppx) {
+    .section-page-one {
+      background-image: url(/img/your-order/girl-desk-L@2x.jpg);
+    }
+  }
+  .contant {
+    display: flex;
+    justify-content: center;
+  }
+  .img-shirt {
+    display: none;
+  }
+  .images-container {
+    margin-right: 50px;
+  }
+
+  .img-shirt-first {
+    display: flex;
+    width: 524px;
+    height: 521px;
+    border: solid 1px;
+    border-radius: 4px;
+  }
+  .input-order::placeholder {
+    padding-left: 16px;
+    font-size: 16px;
+    color: rgba(252, 249, 249, 0.4);
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+  }
+  .textarea::placeholder {
+    color: rgba(252, 249, 249, 0.4);
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+  }
+  .btn {
+    height: 49px;
+    border: solid 1px;
+    border-radius: 15px;
+    border-color: rgba(252, 249, 249, 0.1);
+    color: var(--white-color);
+    padding: 14px 36px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.37;
+    letter-spacing: -0.04em;
+    background-color: transparent;
+    text-transform: uppercase;
+    display: inline-flex;
+    transition: border 200ms ease-in-out;
+    margin-bottom: 100px;
+  }
+  .btn:hover,
+  focus {
+    border-color: var(--yellow-color);
+    outline: transparent;
+  }
 }
