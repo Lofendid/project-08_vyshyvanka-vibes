@@ -28,14 +28,12 @@
   margin-bottom: 50px;
 }
 
-.about-us-img {
-  height: 499px;
-}
-
 .about-us-section {
   background-image: url('../img/about-us/texture-mob.png');
   background-repeat: no-repeat;
-  background-position: top 567px left 125px;
+  background-size: 252px 408px;
+  background-position-x: 130px;
+  background-position-y: 660px;
 }
 
 @media screen and (min-width: 768px) {
@@ -54,7 +52,6 @@
 
   .about-us-section {
     background-image: url('../img/about-us/texture-tab.png');
-    background-size: 41%;
     background-repeat: no-repeat;
     background-position: top 480px left 399px;
   }
@@ -62,13 +59,17 @@
 
 @media screen and (min-width: 1280px) {
   .about-us-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 75px 100px 80px 100px;
     display: flex;
     gap: 50px;
+    justify-content: center;
+    align-items: center;
   }
 
-  .about-us-container {
-    padding: 75px 100px 80px 100px;
-    margin: 0;
+  .title-text-container {
+    padding-top: 40px;
   }
 
   .about-us-text {
@@ -84,4 +85,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .about-us-text {
+    width: 481px;
+  }
 }
