@@ -21,11 +21,6 @@
 }
 
 .collection-card-title{
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
     margin: 18px 0 8px;
 
     color: var(--white-color);
@@ -43,7 +38,7 @@
     border-radius: 4px;
 }
 
-
+/* For mobile */
 @media screen and (max-width: 767px){
     .collection-list{
         flex-direction: column;
@@ -60,11 +55,12 @@
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-
     .our-collection{
         background-image: url('../img/our-collection/mob/texture-mob@2x.png');
     }
 }
+
+/* For tablet */
 
 @media screen and (min-width: 768px) {
     .our-collection {
@@ -88,12 +84,29 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
     .collection-card-title{
         font-size: 18px;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
     }
 
     .collection-card-text{
         font-size: 18px;
     }
 }
+
+/* Tablet 2x */
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .our-collection {
+        background-image: url('../img/our-collection/tab/texture-tab@2x.png');
+    }
+}
+
+/* For desktop */
 
 @media screen and (min-width: 1280px) {
     .our-collection {
@@ -113,6 +126,14 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
     .collection-card {
         flex-basis: calc((100% - 40px) / 3);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+    .our-collection {
+        background-image: url('../img/our-collection/desk/texture-desk@2x.png');
     }
 }
 
