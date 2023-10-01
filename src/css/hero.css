@@ -30,6 +30,8 @@
     border-radius: 15px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     color: var(--white-color);
+    font-weight: var(--semi-bold-weight);
+    letter-spacing: -0.04em;
     transition: border 200ms ease-in-out;
  }
 
