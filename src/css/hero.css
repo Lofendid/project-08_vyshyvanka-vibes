@@ -1,9 +1,3 @@
- .hero-section {
-    padding-top: 60px;
- }
- 
-/* Delete the upper styles later */
-
  .hero-title {
     margin-bottom: 20px;
     color: var(--white-color);
@@ -11,7 +5,7 @@
     font-size: var(--big-font);
     line-height: 1.22;
     font-weight: var(--regular-weight);
-    letter-spacing: -0.03em;
+    letter-spacing: var(--letter-s);
  }
 
  .hero-section .accent {
@@ -69,7 +63,6 @@
         margin-bottom: 40px;
         font-size: var(--large-font);
         line-height: 1.18;
-        letter-spacing: -0.03em;
     }
 
     
