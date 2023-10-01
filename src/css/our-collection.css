@@ -39,6 +39,12 @@
 }
 
 /* For mobile */
+@media screen and (max-width: 360px) {
+    .our-collection{
+        background-position-y: 200px;
+    }
+}
+
 @media screen and (max-width: 767px){
     .collection-list{
         flex-direction: column;
