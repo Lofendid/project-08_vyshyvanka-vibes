@@ -1,0 +1,87 @@
+.about-us-container {
+  padding: 20px 20px 25px 20px;
+}
+
+.about-us-title {
+  color: var(--white-color);
+  font-size: var(--mid-font);
+  font-weight: var(--bold-weight);
+  line-height: 1.37;
+  letter-spacing: var(--letter-s);
+  margin-bottom: 40px;
+}
+
+.about-us-text {
+  color: var(--text-color);
+  font-size: var(--regular-S-font);
+  font-weight: var(--regular-weight);
+  line-height: normal;
+  letter-spacing: -0.04em;
+  display: inline-block;
+}
+
+.about-us-text:nth-child(1n) {
+  margin-bottom: 20px;
+}
+
+.about-us-text:last-child {
+  margin-bottom: 50px;
+}
+
+.about-us-img {
+  height: 499px;
+}
+
+.about-us-section {
+  background-image: url('../img/about-us/texture-mob.png');
+  background-repeat: no-repeat;
+  background-position: top 567px left 125px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-container {
+    padding: 50px 32px;
+  }
+
+  .about-us-title {
+    font-size: var(--big-font);
+    line-height: 1.45;
+  }
+
+  .about-us-text {
+    font-size: var(--regular-M-font);
+  }
+
+  .about-us-section {
+    background-image: url('../img/about-us/texture-tab.png');
+    background-size: 41%;
+    background-repeat: no-repeat;
+    background-position: top 480px left 399px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us-container {
+    display: flex;
+    gap: 50px;
+  }
+
+  .about-us-container {
+    padding: 75px 100px 80px 100px;
+    margin: 0;
+  }
+
+  .about-us-text {
+    width: 436px;
+  }
+
+  .about-us-section {
+    background-image: url('../img/about-us/texture-tab.png');
+    background-size: 41%;
+    background-repeat: no-repeat;
+    background-position: top 480px left 399px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}
