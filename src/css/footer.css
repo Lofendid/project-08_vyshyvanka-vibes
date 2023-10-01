@@ -50,6 +50,11 @@
   text-transform: uppercase;
 }
 
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: var(--yellow-color, #ecd979);
+}
+
 .footer-title {
   color: var(--white-color, #fcf9f9);
   font-size: 44px;
