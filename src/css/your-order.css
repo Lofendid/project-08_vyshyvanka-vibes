@@ -20,7 +20,7 @@
 }
 .input-order {
   background-color: transparent;
-  width: 335px;
+  width: 100%;
   height: 45px;
   border: solid 1px;
   border-radius: 15px;
@@ -33,7 +33,15 @@
   font-weight: 400;
   font-family: 'Manrope', sans-serif;
 }
-
+.input-order:hover,
+focus {
+  border-color: var(--white-color);
+  color: var(--white-color);
+}
+.input-order::placeholder:hover,
+:focus {
+  color: var(--white-color);
+}
 .container-textarea {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -41,7 +49,7 @@
 .textarea {
   background-color: transparent;
   resize: none;
-  width: 335px;
+  width: 100%;
   height: 196px;
   border: solid 1px;
   border-radius: 8px;
@@ -55,33 +63,43 @@
   padding-left: 16px;
   padding-top: 14px;
 }
-.button-form {
+.textarea:hover,
+focus {
+  border-color: var(--white-color);
+}
+.btn {
   display: flex;
-  width: 130px;
   height: 49px;
   border: solid 1px;
   border-radius: 15px;
-  border-color: rgba(252, 249, 249, 0.4);
+  border-color: rgba(252, 249, 249, 0.1);
   color: var(--white-color);
   margin: 0 auto;
   align-items: center;
-  padding-left: 36px;
-  padding-right: 37px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  justify-content: center;
+  padding: 14px 36px;
   font-weight: 600;
   font-size: 14px;
   font-family: 'Manrope', sans-serif;
   line-height: 1.37;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   background-color: transparent;
   text-transform: uppercase;
+  transition: border 200ms ease-in-out;
+}
+.btn:hover,
+focus {
+  border-color: var(--yellow-color);
+  outline: transparent;
 }
 .container-icon {
   padding-left: 10px;
 }
 /* tablet */
 @media screen and (min-width: 768px) {
+  .section-order {
+    padding-bottom: 80px;
+  }
   .img-shirt {
     display: none;
   }
@@ -137,28 +155,29 @@
     font-size: 14px;
     font-family: 'Manrope', sans-serif;
   }
-  .button-form {
-    width: 130px;
+  .btn {
     height: 49px;
     border: solid 1px;
     border-radius: 15px;
-    border-color: rgba(252, 249, 249, 0.4);
+    border-color: rgba(252, 249, 249, 0.1);
     color: var(--white-color);
-    padding-left: 36px;
-    padding-right: 37px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 14px 36px;
     font-weight: 600;
     font-size: 14px;
     font-family: 'Manrope', sans-serif;
     line-height: 1.37;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.04em;
     background-color: transparent;
     text-transform: uppercase;
-    display: inline-block;
+    display: inline-flex;
+    transition: border 200ms ease-in-out;
     margin-bottom: 100px;
   }
-
+  .btn:hover,
+  focus {
+    border-color: var(--yellow-color);
+    outline: transparent;
+  }
   .container-icon {
     padding-left: 10px;
   }
@@ -175,4 +194,7 @@
   .textura {
     position: absolute;
   }
+}
+/* dextop-version */
+@media screen and (min-width: 1280px) {
 }
