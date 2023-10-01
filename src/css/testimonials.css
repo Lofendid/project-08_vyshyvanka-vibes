@@ -13,16 +13,14 @@
     margin-bottom: 40px;
 }
 
-
-
 .testimonials-list {
+    display: flex;
 }
 
 @media screen and (min-width: 768px) {
     .testimonials-list {
-    display: flex;    
-    gap: 32px;    
-    justify-content: center;
+        gap: 32px;    
+        justify-content: center;
     }
 }
 @media screen and (min-width: 1280px) {
@@ -32,7 +30,7 @@
 }
 
 .testimonials-item {
-    display: block;
+    position: relative;
 }
 @media only screen and (max-width: 767.98px) {
 .sergey {
@@ -42,12 +40,21 @@
     display: none;
 }
 }
-@media only screen and (max-width: 1279.98px) {
-    .natalia {
-        display: none;
+@media screen and (min-width: 768px) {
+    .testimonials-item {
+    width: calc((100% - 32px) / 2);
     }
 }
-
+@media only screen and (max-width: 1279.98px) {
+    .natalia {
+    display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .testimonials-item {
+    flex-basis: calc((100% - 32px) / 2);
+    }
+}
 .testimonials-img {
     
     box-shadow: 0px 1px 4px 0px rgba(16, 24, 40, 0.06);
@@ -56,14 +63,14 @@
     transform: translate(-50%, -50%);
 }
 .testimonials-card {
+    
     border-radius: 4px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     padding: 0px 18px 18px 18px;
-    position: relative;
+    
 }
 @media screen and (min-width: 768px) {
     .testimonials-card {
-
     flex-basis: calc((100% - 32px) / 2);
 }
 }
