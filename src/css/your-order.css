@@ -1,5 +1,20 @@
 /* mobile-version */
-
+.section-order {
+  background-image: url(/img/your-order/girl-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192pdi),
+  (min-resolution: 2dppx) {
+  .section-page-one {
+    background-image: url(/img/your-order/girl-mob@2x.jpg);
+  }
+}
+.img-shirt-first {
+  display: none;
+}
 .img-shirt {
   display: none;
 }
@@ -95,8 +110,35 @@ focus {
 .container-icon {
   padding-left: 10px;
 }
+.picture {
+  background-image: url(/img/menu/texture-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192pdi),
+  (min-resolution: 2dppx) {
+  .section-page-one {
+    background-image: url(/img/menu/texture-mob@2x.png);
+  }
+}
+
 /* tablet */
 @media screen and (min-width: 768px) {
+  .section-order {
+    background-image: url(/img/your-order/girl-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192pdi),
+    (min-resolution: 2dppx) {
+    .section-page-one {
+      background-image: url(/src/img/your-order/girl-tab@2x.jpg);
+    }
+  }
   .section-order {
     padding-bottom: 80px;
   }
@@ -191,10 +233,44 @@ focus {
     width: 638px;
     height: 521px;
   }
-  .textura {
-    position: absolute;
+  .img-shirt-first {
+    display: none;
+  }
+  .picture {
   }
 }
 /* dextop-version */
 @media screen and (min-width: 1280px) {
+  .section-order {
+    background-image: url(/img/your-order/girl-desk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192pdi),
+    (min-resolution: 2dppx) {
+    .section-page-one {
+      background-image: url(/img/your-order/girl-desk-L@2x.jpg);
+    }
+  }
+  .contant {
+    display: flex;
+    justify-content: center;
+  }
+  .img-shirt {
+    display: none;
+  }
+  .images-container {
+    margin-right: 50px;
+  }
+
+  .img-shirt-first {
+    display: flex;
+    width: 524px;
+    height: 521px;
+    border: solid 1px;
+    border-radius: 4px;
+  }
 }
