@@ -12,15 +12,13 @@ header {
   background-color: transparent;
   border: transparent;
   padding: 0;
-  height: 24px;
-  width: 36px;
   display: flex;
   align-items: center;
 }
 
 .menu-icon {
-  height: 24px;
   width: 36px;
+  height: 36px;
 }
 
 .header-sm-list {
@@ -31,6 +29,8 @@ header {
 
 .header-sm-icon {
   fill: #fcf9f9;
+  width: 28px;
+  height: 28px;
 }
 
 .nav-header {
