@@ -111,10 +111,14 @@ focus {
   padding-left: 10px;
 }
 .picture {
+  width: 100%;
+  height: 100%;
   background-image: url(/img/menu/texture-mob.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 77px 177px;
+  padding-bottom: 80px;
+  background-position-y: 298px;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192pdi),
@@ -237,6 +241,21 @@ focus {
     display: none;
   }
   .picture {
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/img/menu/texture-tab.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 77px 177px;
+    padding-bottom: 80px;
+    background-position-y: 298px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192pdi),
+    (min-resolution: 2dppx) {
+    .section-page-one {
+      background-image: url(/src/img/menu/texture-tab@2x.png);
+    }
   }
 }
 /* dextop-version */
@@ -309,6 +328,23 @@ focus {
     border-color: var(--yellow-color);
     outline: transparent;
   }
+  .picture {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/menu/texture-tab.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 77px 177px;
+    padding-bottom: 80px;
+    background-position-y: 298px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192pdi),
+    (min-resolution: 2dppx) {
+    .section-page-one {
+      background-image: url(/img/menu/texture-tab@2x.png);
+    }
+  }
 }
 @media screen and (min-width: 1440px) {
   .section-order {
@@ -378,5 +414,22 @@ focus {
   focus {
     border-color: var(--yellow-color);
     outline: transparent;
+  }
+  .picture {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/menu/texture-tab.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 77px 177px;
+    padding-bottom: 80px;
+    background-position-y: 298px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192pdi),
+    (min-resolution: 2dppx) {
+    .section-page-one {
+      background-image: url(/img/menu/texture-tab@2x.png);
+    }
   }
 }
