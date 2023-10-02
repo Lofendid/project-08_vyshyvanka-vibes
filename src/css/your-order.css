@@ -99,12 +99,13 @@
   border-color: var(--white-color);
 }
 
-.your-order-input:focus::placeholder {
-  color: var(--white-color);
-}
-
 ::placeholder {
   color: var(--placeholder-text-color);
+  transition: color 200ms ease-in-out;
+}
+
+.your-order-input:focus::placeholder {
+  color: var(--white-color);
 }
 
 .your-order-form .btn {
@@ -254,6 +255,21 @@
   screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
   .your-order-section .bg-texture {
     background-image: url(/img/your-order/texture-desk@2x.png);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .your-order-section .bg-texture {
+    width: 325px;
+    background-image: url(/img/your-order/texture-desk-L.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .your-order-section .bg-texture {
+    background-image: url(/img/your-order/texture-desk-L@2x.png);
   }
 }
 
