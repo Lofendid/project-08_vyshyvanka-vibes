@@ -4,11 +4,6 @@
     padding: 0 32px;
     padding-bottom: 80px;
 }
-@media screen and (min-width: 1280px) {
-    .testimonials>.container {
-        padding: 0 100px;
-    }
-}
 .testimonials-title {
     margin-bottom: 40px;
 }
@@ -28,10 +23,6 @@
         gap: 26px;
     }
 }
-
-.testimonials-item {
-    position: relative;
-}
 @media only screen and (max-width: 767.98px) {
 .sergey {
     display: none;
@@ -42,7 +33,7 @@
 }
 @media screen and (min-width: 768px) {
     .testimonials-item {
-    width: calc((100% - 32px) / 2);
+    flex-basis: calc((100% - 32px) / 2);
     }
 }
 @media only screen and (max-width: 1279.98px) {
@@ -50,13 +41,13 @@
     display: none;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
     .testimonials-item {
-    flex-basis: calc((100% - 32px) / 2);
+    flex-basis: calc((100% - 52px) / 3);
     }
 }
 .testimonials-img {
-    
+    top: 0;
     box-shadow: 0px 1px 4px 0px rgba(16, 24, 40, 0.06);
     position: absolute;
     left: 50%;
@@ -67,13 +58,9 @@
     border-radius: 4px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     padding: 0px 18px 18px 18px;
-    
+    position: relative;
 }
-@media screen and (min-width: 768px) {
-    .testimonials-card {
-    flex-basis: calc((100% - 32px) / 2);
-}
-}
+
 .testimonials-name {
 
     color: var(--white-color);
@@ -85,7 +72,6 @@
     margin-top: 54px;
 }
 .testimonials-text {
-    width: 0.72;
     color: var(--text-color);
     text-align: center;    
     font-size: var(--regular-S-font);    
@@ -94,14 +80,12 @@
 }
 @media screen and (min-width: 768px) {
     .testimonials-text {
-        width: 300px;
-        height: 176px;
-        font-size: var(--regular-M-font);
+    font-size: var(--regular-M-font);
     }
 }
-@media screen and (min-width: 1280px) {
+/*@media screen and (min-width: 1280px) {
     .testimonials-text {
-        width: 307px;
+    width: 307px;
     }
 }
 @media screen and (min-width: 1440px) {
@@ -109,4 +93,4 @@
         width: 360px;
         height: 154px;
     }
-}
+}*/
