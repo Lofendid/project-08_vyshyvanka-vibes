@@ -1,95 +1,60 @@
 <!-- Your-orders -->
-<section class="section-order">
-  <div class="container contant">
-    <div class="images-container">
-      <picture>
-        <source
-          src="/src/img/about-us/shirt-desk-L.jpg 1x, 
-        /sdc/img/about-us/shirt-desk@2x.jpg 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          src="/img/your-order/shirt-tab.jpg 1x,
-        /img/your-order/shirt-tab@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
-
-        <img
-          class="img-shirt-first"
-          src="/img/your-order/shirt-desk.jpg"
-          alt="shirt"
-          width="524"
-          height="521"
-        />
-      </picture>
-    </div>
-    <div>
-      <h2 class="title-order">
-        <span class="span-order">Your order</span> is our priority: Personalized
+<section class="your-order-section bottom-marg" id="#your-order">
+  <!-- Girl bg -->
+  <div class="bg-girl"></div>
+  <!-- Main content -->
+  <div class="wrapper container">
+    <div class="main-container side-padd">
+      <h2 class="section-title">
+        <span class="accent">Your order</span> is our priority: Personalized
         approach and quality of service
       </h2>
-      <form class="form-order">
-        <div class="container-input-one-order">
-          <input
-            class="input-order"
-            type="text"
-            name="Enter your full name"
-            placeholder="Enter your full name"
-          />
-        </div>
-        <div class="container-input-two-order">
-          <input
-            class="input-order"
-            type="text"
-            name="Enter your email"
-            placeholder="Enter your email"
-          />
-        </div>
-
-        <div class="container-textarea">
-          <textarea
-            class="textarea"
-            name="Comments"
-            placeholder="Comments"
-          ></textarea>
-        </div>
-
-        <button class="btn" type="submit">
-          Send
-          <div class="container-icon">
-            <svg class="icon" width="20" height="30">
-              <use href="/icons/sprite.svg#icon-arrow"></use>
-            </svg>
-          </div>
+      <form class="your-order-form">
+        <input
+          class="your-order-input"
+          type="text"
+          name="user-name"
+          title="Ivetta Frank / Іветта Франк"
+          placeholder="Enter your full name"
+          pattern="[a-zA-Z А-Яа-яЁёҐґІіЇїЄєІi]+"
+          required
+        />
+        <input
+          class="your-order-input"
+          type="email"
+          name="user-email"
+          title="ivettafrank@gmail.com"
+          placeholder="Enter your email"
+          required
+        />
+        <textarea
+          class="your-order-input textarea"
+          name="comments"
+          placeholder="Comments"
+        ></textarea>
+        <button class="btn uppercase" type="submit">
+          <span>send</span>
+          <svg width="26" height="21">
+            <use href="/icons/sprite.svg#icon-arrow"></use>
+          </svg>
         </button>
       </form>
     </div>
-
-    <div>
-      <picture>
-        <source
-          src="/src/img/about-us/shirt-desk-L.jpg 1x, 
-        /sdc/img/about-us/shirt-desk@2x.jpg 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          src="/img/your-order/shirt-tab.jpg 1x,
-        /img/your-order/shirt-tab@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <div class="container-shirt">
-          <img
-            class="img-shirt"
-            src="/img/your-order/shirt-desk.jpg"
-            alt="shirt"
-            width="524"
-            height="521"
-          />
-        </div>
-      </picture>
-    </div>
+    <picture class="img-shirt">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          /img/your-order/shirt-desk.jpg,
+          /img/your-order/shirt-desk@2x.jpg 2x
+        "
+      />
+      <img
+        srcset="/img/your-order/shirt-tab@2x.jpg 2x"
+        src="/img/your-order/shirt-tab.jpg"
+        alt="shirt"
+      />
+    </picture>
   </div>
-  <div class="picture">
-    <!-- <p>picture</p> -->
-  </div>
+  <!-- Bg texture -->
+  <div class="bg-texture"></div>
 </section>
