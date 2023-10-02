@@ -23,7 +23,7 @@
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-  .footer-conatiner::after {
+  .footer-section:after {
     background-image: url('../img/footer/texture-mob@2x.png');
   }
 }
@@ -42,31 +42,35 @@
 }
 
 .footer-nav-link {
-  color: var(--white-color, #fcf9f9);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: var(--regular-weight, 400);
+  color: var(--white-color);
+  font-size: var(--regular-S-font);
+  font-weight: var(--regular-weight);
   line-height: 1.28;
   text-transform: uppercase;
+  transition: color 200ms ease-in-out;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: var(--yellow-color);
 }
 
 .footer-title {
-  color: var(--white-color, #fcf9f9);
-  font-size: 44px;
-  font-style: normal;
-  font-weight: var(--regular-weight, 400);
+  color: var(--white-color);
+  font-size: var(--big-font);
+  font-weight: var(--regular-weight);
   line-height: 1.22;
   letter-spacing: var(--letter-s);
 }
 
 .footer-title-word-ukr {
-  color: var(--yellow-color, #ecd979);
+  color: var(--yellow-color);
 }
 
 /* =================================FOOTER TABLET =========================== */
 @media screen and (min-width: 768px) {
   .footer-section {
-    height: 370px;
+    height: auto;
   }
 
   .footer-section:after {
@@ -90,11 +94,12 @@
   .footer-nav-list {
     flex-direction: row;
     column-gap: 25px;
+    height: auto;
   }
 
   .footer-title {
     width: 510px;
-    font-size: 54px;
+    font-size: var(--large-font);
     line-height: 1.18;
   }
 }
@@ -102,10 +107,6 @@
 /* =================================FOOTER DESCTOP =========================== */
 
 @media screen and (min-width: 1280px) {
-  .footer-section {
-    height: 363px;
-  }
-
   .footer-section:after {
     background-image: url('../img/footer/texture-desk.png');
   }
@@ -125,7 +126,7 @@
 
   .footer-title {
     width: 754px;
-    font-size: 64px;
+    font-size: var(--extra-large-font);
     line-height: 1.16;
   }
 }
