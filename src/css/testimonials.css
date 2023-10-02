@@ -83,14 +83,3 @@
     font-size: var(--regular-M-font);
     }
 }
-/*@media screen and (min-width: 1280px) {
-    .testimonials-text {
-    width: 307px;
-    }
-}
-@media screen and (min-width: 1440px) {
-    .testimonials-text {
-        width: 360px;
-        height: 154px;
-    }
-}*/
