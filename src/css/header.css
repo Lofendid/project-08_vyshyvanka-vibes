@@ -1,5 +1,11 @@
 header {
-  padding-top: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+  position: sticky;
+  top: 0;
+  background-color: #1c2225;
+  z-index: 999;
 }
 
 .header-cont {
@@ -8,7 +14,7 @@ header {
   justify-content: space-between;
 }
 
-.menu-button {
+.header-menu-button {
   background-color: transparent;
   border: transparent;
   padding: 0;
@@ -16,7 +22,7 @@ header {
   align-items: center;
 }
 
-.menu-icon {
+.header-menu-icon {
   width: 36px;
   height: 36px;
 }
@@ -29,11 +35,10 @@ header {
 
 .header-sm-icon {
   fill: #fcf9f9;
-  width: 28px;
-  height: 28px;
 }
 
 .nav-header {
+  margin-right: 12px;
 }
 
 .header-contacts {
@@ -46,6 +51,15 @@ header {
   border: 1px solid rgba(252, 249, 249, 0.1);
   background: rgba(252, 249, 249, 0.1);
   transition: border 200ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-sm-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-logo {
@@ -60,10 +74,29 @@ header {
   display: none;
 }
 
+.header-sm-instagram-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.header-sm-facebook-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.header-sm-youtube-icon {
+  width: 26px;
+  height: 26px;
+}
+
 /* Tablet */
 
 @media screen and (min-width: 768px) {
-  .menu-icon {
+  header {
+    margin-bottom: 86px;
+  }
+
+  .header-menu-icon {
     width: 44px;
     height: 44px;
   }
@@ -71,12 +104,16 @@ header {
   .header-sm-list {
     margin-right: 20px;
   }
+
+  .nav-header {
+    margin-right: 0;
+  }
 }
 
 /* Desktop */
 
 @media screen and (min-width: 1280px) {
-  .menu-button {
+  .header-menu-button {
     display: none;
   }
 
@@ -103,6 +140,7 @@ header {
     color: #fcf9f9;
     letter-spacing: var(--letter-s);
     font-weight: 400;
+    transition: color 200ms ease-in-out;
   }
 
   .header-contacts {
@@ -123,10 +161,6 @@ header {
     letter-spacing: var(--letter-s);
   }
 
-  .header-nav-link {
-    transition: border 200ms ease-in-out;
-  }
-
   .header-contacts {
     margin-right: 20px;
   }
@@ -141,5 +175,11 @@ header {
 
   .header-nav-link:hover {
     color: #ecd979;
+  }
+
+  header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-bottom: 80px;
   }
 }
