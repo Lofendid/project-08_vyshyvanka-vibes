@@ -1,435 +1,273 @@
-/* mobile-version */
-.section-order {
+/* Background-girl */
+
+.your-order-section .bg-girl {
+  padding-top: 550px;
   background-image: url(/img/your-order/girl-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192pdi),
-  (min-resolution: 2dppx) {
-  .section-page-one {
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .your-order-section .bg-girl {
     background-image: url(/img/your-order/girl-mob@2x.jpg);
   }
 }
-.img-shirt-first {
-  display: none;
+
+@media screen and (min-width: 768px) {
+  .your-order-section .bg-girl {
+    padding-top: 776px;
+    background-image: url(/img/your-order/girl-tab.jpg);
+  }
 }
-.img-shirt {
-  display: none;
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-tab@2x.jpg);
+  }
 }
-.title-order {
-  font-family: 'Manrope', sans-serif;
-  color: var(--white-color);
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.37;
-  letter-spacing: -0.03em;
-  margin-bottom: 40px;
+
+@media screen and (min-width: 1280px) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-desk.jpg);
+    background-position: center;
+  }
 }
-.span-order {
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-desk@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-desk-L.jpg);
+    background-position: top;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-desk-L@2x.jpg);
+  }
+}
+
+/* Main content */
+
+.your-order-section .wrapper {
+  margin-top: 80px;
+}
+
+.your-order-section .accent {
   color: var(--yellow-color);
 }
-.container-input-one-order {
-  margin-bottom: 20px;
-}
-.input-order {
-  background-color: transparent;
-  width: 100%;
-  height: 45px;
-  border: solid 1px;
-  border-radius: 15px;
-  border-color: rgba(252, 249, 249, 0.4);
-}
-.input-order::placeholder {
-  padding-left: 16px;
-  font-size: 14px;
-  color: rgba(252, 249, 249, 0.4);
-  font-weight: 400;
-  font-family: 'Manrope', sans-serif;
-}
-.input-order:hover,
-focus {
-  border-color: var(--white-color);
-  color: var(--white-color);
-}
-.input-order::placeholder:hover,
-:focus {
-  color: var(--white-color);
-}
-.container-textarea {
-  margin-top: 20px;
+
+.your-order-section .section-title {
   margin-bottom: 40px;
 }
-.textarea {
-  background-color: transparent;
-  resize: none;
+
+.your-order-input {
   width: 100%;
-  height: 196px;
-  border: solid 1px;
-  border-radius: 8px;
-  border-color: rgba(252, 249, 249, 0.4);
-}
-.textarea::placeholder {
-  color: rgba(252, 249, 249, 0.4);
-  font-weight: 400;
-  font-size: 14px;
-  font-family: 'Manrope', sans-serif;
-  padding-left: 16px;
-  padding-top: 14px;
-}
-.textarea:hover,
-focus {
-  border-color: var(--white-color);
-}
-.btn {
-  display: flex;
-  height: 49px;
-  border: solid 1px;
-  border-radius: 15px;
-  border-color: rgba(252, 249, 249, 0.1);
-  color: var(--white-color);
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 36px;
-  font-weight: 600;
-  font-size: 14px;
-  font-family: 'Manrope', sans-serif;
-  line-height: 1.37;
-  letter-spacing: -0.04em;
+  padding: 14px 16px;
+  margin-bottom: 20px;
   background-color: transparent;
-  text-transform: uppercase;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  outline: transparent;
+  color: var(--white-color);
+  letter-spacing: 0.02em;
   transition: border 200ms ease-in-out;
 }
-.btn:hover,
-focus {
+
+.your-order-input.textarea {
+  resize: none;
+  min-height: 196px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.your-order-input:focus {
+  border-color: var(--white-color);
+}
+
+.your-order-input:focus::placeholder {
+  color: var(--white-color);
+}
+
+::placeholder {
+  color: var(--placeholder-text-color);
+}
+
+.your-order-form .btn {
+  height: 49px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 36px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  color: var(--white-color);
+  font-weight: var(--semi-bold-weight);
+  letter-spacing: -0.04em;
+  transition: border 200ms ease-in-out;
+}
+
+.your-order-form .btn:hover,
+.your-order-form .btn:focus {
   border-color: var(--yellow-color);
   outline: transparent;
 }
-.container-icon {
-  padding-left: 10px;
-}
-.picture {
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/menu/texture-mob.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 77px 177px;
-  padding-bottom: 80px;
-  background-position-y: 298px;
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192pdi),
-  (min-resolution: 2dppx) {
-  .section-page-one {
-    background-image: url(/img/menu/texture-mob@2x.png);
-  }
+
+.your-order-section .img-shirt {
+  display: none;
 }
 
-/* tablet */
+.your-order-section .bg-texture {
+  display: none;
+}
+
+/*                        Tablet                         */
+
 @media screen and (min-width: 768px) {
-  .section-order {
-    background-image: url(/img/your-order/girl-tab.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192pdi),
-    (min-resolution: 2dppx) {
-    .section-page-one {
-      background-image: url(/src/img/your-order/girl-tab@2x.jpg);
-    }
-  }
-  .section-order {
-    padding-bottom: 80px;
-  }
-  .img-shirt {
-    display: none;
-  }
-  .title-order {
-    font-family: 'Manrope', sans-serif;
-    color: var(--white-color);
-    font-size: 44px;
-    font-weight: 500;
-    line-height: 58px;
-    letter-spacing: -0.03em;
-    margin-bottom: 40px;
-    width: 542px;
-    height: 174px;
-  }
-  .span-order {
-    color: var(--yellow-color);
-  }
-  .container-input-one-order {
-    margin-bottom: 20px;
-  }
-  .input-order {
-    background-color: transparent;
-    width: 508px;
-    height: 50px;
-    border: solid 1px;
-    border-radius: 15px;
-    border-color: rgba(252, 249, 249, 0.4);
-  }
-  .input-order::placeholder {
-    padding-left: 16px;
-    font-size: 14px;
-    color: rgba(252, 249, 249, 0.4);
-    font-weight: 400;
-    font-family: 'Manrope', sans-serif;
+  .your-order-section .wrapper {
+    margin-top: 100px;
   }
 
-  .container-textarea {
-    margin-top: 20px;
-    margin-bottom: 40px;
+  .your-order-section .section-title {
+    max-width: 530px;
   }
-  .textarea {
-    background-color: transparent;
-    resize: none;
-    width: 508px;
-    height: 196px;
-    border: solid 1px;
-    border-radius: 8px;
-    border-color: rgba(252, 249, 249, 0.4);
+
+  .your-order-input {
+    max-width: 508px;
+    font-size: var(--regular-M-font);
   }
-  .textarea::placeholder {
-    color: rgba(252, 249, 249, 0.4);
-    font-weight: 400;
-    font-size: 14px;
-    font-family: 'Manrope', sans-serif;
+
+  .your-order-form .btn {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: var(--regular-M-font);
   }
-  .btn {
-    height: 49px;
-    border: solid 1px;
-    border-radius: 15px;
-    border-color: rgba(252, 249, 249, 0.1);
-    color: var(--white-color);
-    padding: 14px 36px;
-    font-weight: 600;
-    font-size: 14px;
-    font-family: 'Manrope', sans-serif;
-    line-height: 1.37;
-    letter-spacing: -0.04em;
-    background-color: transparent;
-    text-transform: uppercase;
-    display: inline-flex;
-    transition: border 200ms ease-in-out;
+
+  .your-order-form {
     margin-bottom: 100px;
   }
-  .btn:hover,
-  focus {
-    border-color: var(--yellow-color);
-    outline: transparent;
-  }
-  .container-icon {
-    padding-left: 10px;
-  }
-  .container-shirt {
-    padding-left: 80px;
-  }
-  .img-shirt {
-    display: flex;
-    border: solid 1px;
+
+  .your-order-section .img-shirt {
+    display: block;
     border-radius: 4px;
     width: 638px;
-    height: 521px;
-  }
-  .img-shirt-first {
-    display: none;
-  }
-  .picture {
-    width: 100%;
-    height: 100%;
-    background-image: url(/src/img/menu/texture-tab.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 77px 177px;
-    padding-bottom: 80px;
-    background-position-y: 298px;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192pdi),
-    (min-resolution: 2dppx) {
-    .section-page-one {
-      background-image: url(/src/img/menu/texture-tab@2x.png);
-    }
+    margin-left: auto;
   }
 }
-/* dextop-version */
+
+/*                                    Desktop                                    */
+
 @media screen and (min-width: 1280px) {
-  .section-order {
-    background-image: url(/img/your-order/girl-desk.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 80px;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192pdi),
-    (min-resolution: 2dppx) {
-    .section-page-one {
-      background-image: url(/img/your-order/girl-desk-L@2x.jpg);
-    }
-  }
-  .contant {
+  .your-order-section .wrapper {
     display: flex;
+    gap: 50px;
     justify-content: center;
-  }
-  .img-shirt {
-    display: none;
-  }
-  .images-container {
-    margin-right: 50px;
+    margin-top: 150px;
   }
 
-  .img-shirt-first {
-    display: flex;
+  .main-container {
+    padding-left: 0;
+  }
+
+  .your-order-form {
+    margin-bottom: 0;
+  }
+
+  .your-order-section .img-shirt {
+    align-self: flex-start;
+    flex-shrink: 0;
+    order: -1;
     width: 524px;
-    height: 521px;
-    border: solid 1px;
-    border-radius: 4px;
-  }
-  .input-order::placeholder {
-    padding-left: 16px;
-    font-size: 16px;
-    color: rgba(252, 249, 249, 0.4);
-    font-weight: 600;
-    font-family: 'Manrope', sans-serif;
-  }
-  .textarea::placeholder {
-    color: rgba(252, 249, 249, 0.4);
-    font-weight: 600;
-    font-size: 16px;
-    font-family: 'Manrope', sans-serif;
-  }
-  .btn {
-    height: 49px;
-    border: solid 1px;
-    border-radius: 15px;
-    border-color: rgba(252, 249, 249, 0.1);
-    color: var(--white-color);
-    padding: 14px 36px;
-    font-weight: 600;
-    font-size: 16px;
-    font-family: 'Manrope', sans-serif;
-    line-height: 1.37;
-    letter-spacing: -0.04em;
-    background-color: transparent;
-    text-transform: uppercase;
-    display: inline-flex;
-    transition: border 200ms ease-in-out;
-    margin-bottom: 100px;
-  }
-  .btn:hover,
-  focus {
-    border-color: var(--yellow-color);
-    outline: transparent;
-  }
-  .picture {
-    width: 100%;
-    height: 100%;
-    background-image: url(/img/menu/texture-tab.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 77px 177px;
-    padding-bottom: 80px;
-    background-position-y: 298px;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192pdi),
-    (min-resolution: 2dppx) {
-    .section-page-one {
-      background-image: url(/img/menu/texture-tab@2x.png);
-    }
+    margin: 0;
   }
 }
+
+/*                                     Desktop L                                     */
+
 @media screen and (min-width: 1440px) {
-  .section-order {
-    background-image: url(/img/your-order/girl-desk.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 80px;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192pdi),
-    (min-resolution: 2dppx) {
-    .section-page-one {
-      background-image: url(/img/your-order/girl-desk-L@2x.jpg);
-    }
-  }
-  .contant {
-    display: flex;
-    justify-content: center;
-  }
-  .img-shirt {
-    display: none;
-  }
-  .images-container {
-    margin-right: 50px;
+  .your-order-section .section-title {
+    max-width: 666px;
   }
 
-  .img-shirt-first {
-    display: flex;
-    width: 524px;
-    height: 521px;
-    border: solid 1px;
-    border-radius: 4px;
+  .main-container {
+    padding-right: 0;
   }
-  .input-order::placeholder {
-    padding-left: 16px;
-    font-size: 16px;
-    color: rgba(252, 249, 249, 0.4);
-    font-weight: 600;
-    font-family: 'Manrope', sans-serif;
+}
+
+/* Bg texture */
+
+@media screen and (min-width: 768px) {
+  .your-order-section {
+    position: relative;
   }
-  .textarea::placeholder {
-    color: rgba(252, 249, 249, 0.4);
-    font-weight: 600;
-    font-size: 16px;
-    font-family: 'Manrope', sans-serif;
-  }
-  .btn {
-    height: 49px;
-    border: solid 1px;
-    border-radius: 15px;
-    border-color: rgba(252, 249, 249, 0.1);
-    color: var(--white-color);
-    padding: 14px 36px;
-    font-weight: 600;
-    font-size: 16px;
-    font-family: 'Manrope', sans-serif;
-    line-height: 1.37;
-    letter-spacing: -0.04em;
-    background-color: transparent;
-    text-transform: uppercase;
-    display: inline-flex;
-    transition: border 200ms ease-in-out;
-    margin-bottom: 100px;
-  }
-  .btn:hover,
-  focus {
-    border-color: var(--yellow-color);
-    outline: transparent;
-  }
-  .picture {
-    width: 100%;
-    height: 100%;
-    background-image: url(/img/menu/texture-tab.png);
+
+  .your-order-section .bg-texture {
+    display: block;
+    position: absolute;
+    bottom: -79px;
+    z-index: -999999;
+    height: 484px;
+    width: 323px;
+    background-image: url(/img/your-order/texture-tab.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 77px 177px;
-    padding-bottom: 80px;
-    background-position-y: 298px;
+    background-size: contain;
+    background-position: left;
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192pdi),
-    (min-resolution: 2dppx) {
-    .section-page-one {
-      background-image: url(/img/menu/texture-tab@2x.png);
-    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .your-order-section .bg-texture {
+    background-image: url(/img/your-order/texture-tab@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .your-order-section .bg-texture {
+    bottom: 0;
+    width: 289px;
+    background-image: url(/img/your-order/texture-desk.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .your-order-section .bg-texture {
+    background-image: url(/img/your-order/texture-desk@2x.png);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .your-order-section .bg-texture {
+    width: 325px;
+    background-image: url(/img/your-order/texture-desk-L.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .your-order-section .bg-texture {
+    background-image: url(/img/your-order/texture-desk-L@2x.png);
   }
 }
