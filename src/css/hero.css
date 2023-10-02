@@ -69,6 +69,7 @@
     .hero-section .btn {
         margin-left: 141px;
         height: 50px;
+        font-size: var(--regular-M-font);
     }
 
     .hero-section .side-container {
