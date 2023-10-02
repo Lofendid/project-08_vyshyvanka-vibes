@@ -1,8 +1,20 @@
 
 
 .testimonials>.container {
-    padding: 0 32px;
+    
     padding-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+    .testimonials>.container {
+        
+        padding-bottom: 100px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .testimonials>.container {
+        padding-bottom: 150px; 
+               
+    }
 }
 .testimonials-title {
     margin-bottom: 40px;
@@ -10,6 +22,7 @@
 
 .testimonials-list {
     display: flex;
+   
 }
 
 @media screen and (min-width: 768px) {
