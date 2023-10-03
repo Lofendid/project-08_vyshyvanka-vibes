@@ -3,16 +3,10 @@
     margin-bottom: 64px;
 }
 
-.testimonials-list {
-    
-   
-}
-
 @media screen and (min-width: 768px) {
     .testimonials-list {
-        gap: 32px;    
-        justify-content: center;
         display: flex;
+        gap: 32px;    
     }
 }
 @media screen and (min-width: 1280px) {
@@ -43,16 +37,15 @@
 }
 .testimonials-img {
     top: 0;
-    box-shadow: 0px 1px 4px 0px rgba(16, 24, 40, 0.06);
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 4px 0px rgba(16, 24, 40, 0.06);
 }
 .testimonials-card {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     border-radius: 4px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     padding: 54px 18px 18px 18px;
@@ -61,17 +54,17 @@
 }
 @media screen and (min-width: 768px) {
     .testimonials-card {
-        height: 286px;
+        min-height: 286px;
     }
 }
 @media screen and (min-width: 1280px) {
     .testimonials-card {
-        height: 285px;
+        min-height: 285px;
     }
 }
 @media screen and (min-width: 1440px) {
     .testimonials-card {
-        height: 264px;
+        min-height: 264px;
     }
 }
 .testimonials-name {
@@ -101,7 +94,6 @@
 @media screen and (min-width: 1280px) {
     .testimonials-text {
         max-width: 307px;
-        margin: 0 auto;
     }
 }
 @media screen and (min-width: 1440px) {
