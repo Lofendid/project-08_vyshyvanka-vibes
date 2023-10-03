@@ -1,9 +1,29 @@
-<div class="menu-backdrop">
+<div id="backdrop-for-menu" class="menu-backdrop">
   <div class="container menu-container">
-    <button class="close-menu-button">
-      <svg class="close-menu-icon" width="44" height="44">
+    <button onclick="closeMenuFunction()" class="close-menu-button">
+      <svg class="close-menu-icon">
         <use href="/icons/sprite.svg#icon-close"></use>
       </svg>
     </button>
+    <div class="menu-elements-cont">
+      <a class="menu-phone uppercase" href="tel:+380684439426"
+        >+380 (68) 443-94-26</a
+      >
+      <ul class="menu-nav-list">
+        <li class="menu-nav-item">
+          <a class="menu-nav-link uppercase" href="">about us</a>
+        </li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link uppercase" href="">our collection</a>
+        </li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link uppercase" href="">customer order</a>
+        </li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link uppercase" href="">testimonials</a>
+        </li>
+      </ul>
+      <div class="menu-ornament-cont"></div>
+    </div>
   </div>
 </div>
