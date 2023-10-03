@@ -4,7 +4,7 @@ header {
   margin-bottom: 40px;
   position: sticky;
   top: 0;
-  background-color: #1c2225;
+  background-color: var(--black-color);
   z-index: 999;
 }
 
@@ -22,15 +22,9 @@ header {
   align-items: center;
 }
 
-.header-menu-icon {
-  width: 36px;
-  height: 36px;
-}
-
 .header-sm-list {
   display: flex;
   gap: 12px;
-  margin-right: 12px;
 }
 
 .header-sm-icon {
@@ -54,6 +48,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 44px;
 }
 
 .header-sm-link {
@@ -62,12 +57,10 @@ header {
   justify-content: center;
 }
 
-.header-logo {
-}
-
 .sm-menu-cont {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .header-nav-list {
@@ -96,13 +89,13 @@ header {
     margin-bottom: 86px;
   }
 
+  .sm-menu-cont {
+    gap: 20px;
+  }
+
   .header-menu-icon {
     width: 44px;
     height: 44px;
-  }
-
-  .header-sm-list {
-    margin-right: 20px;
   }
 
   .nav-header {
@@ -117,17 +110,10 @@ header {
     display: none;
   }
 
-  .header-sm-list {
-    margin-right: 0;
-  }
-
   .nav-header {
     display: flex;
     align-items: center;
-  }
-
-  .header-logo {
-    margin-right: 60px;
+    gap: 60px;
   }
 
   .header-nav-list {
@@ -159,10 +145,6 @@ header {
     padding: 14px 28px;
     transition: border 200ms ease-in-out;
     letter-spacing: var(--letter-s);
-  }
-
-  .header-contacts {
-    margin-right: 20px;
   }
 
   .header-sm-item:hover {
