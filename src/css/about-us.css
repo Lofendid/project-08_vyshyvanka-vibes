@@ -1,5 +1,4 @@
 
-
 .about-us-title {
   margin-bottom: 40px;
 }
@@ -26,7 +25,7 @@
   background-image: url('../img/about-us/texture-mob.png');
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 200px 330px;
+  background-size: 250px 480px;
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
