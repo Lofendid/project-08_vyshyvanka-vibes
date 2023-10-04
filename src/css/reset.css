@@ -1,8 +1,14 @@
 /* Reset styles */
 
-
 body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 h1,

@@ -2,16 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-
 .page-container {
     min-height: 100vh;
     display: flex;
