@@ -39,22 +39,17 @@ header {
   display: none;
 }
 
-.header-sm-item {
+.header-sm-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 8px;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   background: rgba(252, 249, 249, 0.1);
   transition: border 200ms ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-}
-
-.header-sm-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .sm-menu-cont {
@@ -147,15 +142,20 @@ header {
     letter-spacing: var(--letter-s);
   }
 
-  .header-sm-item:hover {
+  .header-sm-link:hover,
+  .header-sm-link:focus {
     border: 1px solid #ecd979;
+    outline: transparent;
   }
 
-  .header-phone:hover {
+  .header-phone:hover,
+  .header-phone:focus {
     border: 1px solid #ecd979;
+    outline: transparent;
   }
 
-  .header-nav-link:hover {
+  .header-nav-link:hover,
+  .header-nav-link:focus {
     color: #ecd979;
   }
 
