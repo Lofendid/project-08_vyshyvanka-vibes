@@ -26,9 +26,3 @@
 .content-center {
     margin: 0 auto;
 }
-
-.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-}

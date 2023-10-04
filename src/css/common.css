@@ -1,3 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
 .container {
     max-width: 375px;
     margin: 0 auto;
@@ -17,10 +31,10 @@
 
 .section-title {
     color: var(--white-color);
-    font-size: 32px;
-    font-weight: 500;
+    font-size: var(--mid-font);
+    font-weight: var(--bold-weight);
     line-height: 1.37;
-    letter-spacing: -0.03em;
+    letter-spacing: var(--letter-s);
 }
 
 /*              Tablet               */
@@ -43,7 +57,7 @@
     }
 
     .section-title {
-        font-size: 44px;
+        font-size: var(--big-font);
         line-height: 1.45;
     }
 }

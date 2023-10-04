@@ -1,0 +1,119 @@
+
+.testimonials-title {
+    margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonials-list {
+        display: flex;
+        gap: 32px;    
+    }
+}
+@media screen and (min-width: 1280px) {
+    .testimonials-list {
+        gap: 26px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .testimonials-item:not(:first-child) {
+    display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .testimonials-item {
+    flex-basis: calc((100% - 32px) / 2);
+    
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .testimonials-item:last-child {
+        display: none;
+        }
+}
+@media screen and (min-width: 1280px) {
+    .testimonials-item {
+    flex-basis: calc((100% - 52px) / 3);
+    }
+}
+.testimonials-img {
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 0px 1px 4px 0px rgba(16, 24, 40, 0.06);
+}
+.testimonials-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    border: 1px solid rgba(252, 249, 249, 0.10);
+    padding: 54px 18px 18px 18px;
+    position: relative;
+    
+}
+@media screen and (min-width: 768px) {
+    .testimonials-card {
+        min-height: 286px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .testimonials-card {
+        min-height: 285px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .testimonials-card {
+        min-height: 264px;
+    }
+}
+.testimonials-name {
+
+    color: var(--white-color);
+    text-align: center;
+    font-size: var(--comment-name-font);
+    font-weight: var(--semi-bold-weight);
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+.testimonials-text {
+    color: var(--text-color);
+    text-align: center;    
+    font-size: var(--regular-S-font);    
+    font-weight: var(--regular-weight);
+    line-height: normal;
+    max-width: 291px;
+    letter-spacing: normal;
+}
+@media screen and (min-width: 768px) {
+    .testimonials-text {
+        font-size: var(--regular-M-font);
+        max-width: 300px;}
+    .first {
+        letter-spacing: -0.016em;
+        }
+    .second {
+        letter-spacing: 0;
+        }
+    }
+
+
+@media screen and (min-width: 1280px) {
+    .testimonials-text {
+        max-width: 307px;
+    }
+    .first {
+        letter-spacing: 0;
+    }
+    .second {
+        letter-spacing: -0.02em
+    }
+}
+@media screen and (min-width: 1440px) {
+    .testimonials-text {
+        max-width: 360px;
+    }
+    .second {
+        letter-spacing: 0;
+    }
+}
