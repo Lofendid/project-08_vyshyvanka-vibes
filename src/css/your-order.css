@@ -143,6 +143,7 @@
 /*                        Tablet                         */
 
 @media screen and (min-width: 768px) {
+
   .your-order-section .wrapper {
     margin-top: 100px;
   }
@@ -215,7 +216,16 @@
 
 /* Bg texture */
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+  .your-order-section {
+    padding-bottom: 179px;
+  }
+  
+}
+
 @media screen and (min-width: 768px) {
+
   .your-order-section {
     position: relative;
   }
@@ -223,13 +233,13 @@
   .your-order-section .bg-texture {
     display: block;
     position: absolute;
-    bottom: -79px;
-    z-index: -999999;
-    height: 484px;
+    bottom: 100px;
     width: 323px;
+    height: 484px;
+    z-index: -99999;
     background-image: url(/img/your-order/texture-tab.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: left;
   }
 }
@@ -243,8 +253,12 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .your-order-section {
+    padding-bottom: 150px;
+  }
+
   .your-order-section .bg-texture {
-    bottom: 0;
+    bottom: 150px;
     width: 289px;
     background-image: url(/img/your-order/texture-desk.png);
   }
