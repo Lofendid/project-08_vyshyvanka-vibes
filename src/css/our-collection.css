@@ -1,0 +1,152 @@
+.our-collection{
+    background-image: url('../img/our-collection/mob/texture-mob.png');
+    background-repeat: no-repeat;
+    background-size: 77px 177px;
+    background-position-y: 298px;
+}
+
+.our-collection .container {
+    padding: 0 20px;
+}
+
+.our-collection .section-title{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.collection-list{
+    display: flex;
+    gap: 20px;
+}
+
+.collection-card-title{
+    margin: 18px 0 8px;
+
+    color: var(--white-color);
+    font-size: var(--regular-S-font);
+    font-weight: var(--bold-weight);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.collection-card-text{
+    letter-spacing: 0.05em;
+}
+
+.collection-img{
+    border-radius: 4px;
+}
+
+/* For mobile */
+@media screen and (max-width: 360px) {
+    .our-collection{
+        background-position-y: 200px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .collection-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collection-card{
+        max-width: 335px;
+    }
+}
+
+/* Mobile 2x */
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .our-collection{
+        background-image: url('../img/our-collection/mob/texture-mob@2x.png');
+    }
+}
+
+/* For tablet */
+
+@media screen and (min-width: 768px) {
+    .our-collection {
+        background-image: url('../img/our-collection/tab/texture-tab.png');
+        background-position-y: 221px;
+        background-size: 114px 300px;
+    }
+
+    .our-collection .container {
+        padding: 0 32px;
+    }
+
+    .collection-list{
+        flex-wrap: wrap;
+    }
+
+    .collection-card{
+        flex-basis: calc((100% - 20px) / 2);
+    }
+
+    .collection-card-title{
+        font-size: var(--regular-L-font);
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+
+    .collection-card-text{
+        font-size: var(--regular-L-font);
+    }
+}
+
+/* Tablet 2x */
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .our-collection {
+        background-image: url('../img/our-collection/tab/texture-tab@2x.png');
+    }
+}
+
+/* For desktop */
+
+@media screen and (min-width: 1280px) {
+    .our-collection {
+        background-image: url('../img/our-collection/desk/texture-desk.png');
+        background-size: 169px 300px;
+    }
+
+    .our-collection .container{
+        padding: 0 35px;
+    }
+
+    .collection-list {
+        gap: 40px 20px;
+        margin: 0 auto;
+    }
+
+    .collection-card {
+        flex-basis: calc((100% - 40px) / 3);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+    .our-collection {
+        background-image: url('../img/our-collection/desk/texture-desk@2x.png');
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .our-collection{
+        background-position-y: 231px;
+    }
+
+    .our-collection .container {
+        padding: 0 36px;
+    }
+}

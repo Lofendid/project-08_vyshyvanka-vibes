@@ -1,0 +1,289 @@
+/* Background-girl */
+
+.your-order-section .bg-girl {
+  padding-top: 550px;
+  background-image: url(/img/your-order/girl-mob.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .your-order-section .bg-girl {
+    padding-top: 776px;
+    background-image: url(/img/your-order/girl-tab.jpg);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-desk.jpg);
+    background-position: center;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-desk@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-desk-L.jpg);
+    background-position: top;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .your-order-section .bg-girl {
+    background-image: url(/img/your-order/girl-desk-L@2x.jpg);
+  }
+}
+
+/* Main content */
+
+.your-order-section .wrapper {
+  margin-top: 80px;
+}
+
+.your-order-section .accent {
+  color: var(--yellow-color);
+}
+
+.your-order-section .section-title {
+  margin-bottom: 40px;
+}
+
+.your-order-input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  outline: transparent;
+  color: var(--white-color);
+  letter-spacing: 0.02em;
+  transition: border 200ms ease-in-out;
+}
+
+.your-order-input.textarea {
+  resize: none;
+  min-height: 196px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.your-order-input:focus {
+  border-color: var(--white-color);
+}
+
+::placeholder {
+  color: var(--placeholder-text-color);
+  transition: color 200ms ease-in-out;
+}
+
+.your-order-input:focus::placeholder {
+  color: var(--white-color);
+}
+
+.your-order-form .btn {
+  height: 49px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 36px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  color: var(--white-color);
+  font-weight: var(--semi-bold-weight);
+  letter-spacing: -0.04em;
+  transition: border 200ms ease-in-out;
+}
+
+.your-order-form .btn:hover,
+.your-order-form .btn:focus {
+  border-color: var(--yellow-color);
+  outline: transparent;
+}
+
+.your-order-section .img-shirt {
+  display: none;
+}
+
+.your-order-section .bg-texture {
+  display: none;
+}
+
+/*                        Tablet                         */
+
+@media screen and (min-width: 768px) {
+  .your-order-section .wrapper {
+    margin-top: 100px;
+  }
+
+  .your-order-section .section-title {
+    max-width: 530px;
+  }
+
+  .your-order-input {
+    max-width: 508px;
+    font-size: var(--regular-M-font);
+  }
+
+  .your-order-form .btn {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: var(--regular-M-font);
+  }
+
+  .your-order-form {
+    margin-bottom: 100px;
+  }
+
+  .your-order-section .img-shirt {
+    display: block;
+    border-radius: 4px;
+    width: 638px;
+    margin-left: auto;
+  }
+}
+
+/*                                    Desktop                                    */
+
+@media screen and (min-width: 1280px) {
+  .your-order-section .wrapper {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .main-container {
+    padding-left: 0;
+  }
+
+  .your-order-form {
+    margin-bottom: 0;
+  }
+
+  .your-order-section .img-shirt {
+    align-self: flex-start;
+    flex-shrink: 0;
+    order: -1;
+    width: 524px;
+    margin: 0;
+  }
+}
+
+/*                                     Desktop L                                     */
+
+@media screen and (min-width: 1440px) {
+  .your-order-section .section-title {
+    max-width: 666px;
+  }
+
+  .main-container {
+    padding-right: 0;
+  }
+}
+
+/* Bg texture */
+
+@media screen and (min-width: 768px) {
+  .your-order-section {
+    position: relative;
+  }
+
+  .your-order-section .bg-texture {
+    display: block;
+    position: absolute;
+    bottom: -79px;
+    z-index: -999999;
+    height: 484px;
+    width: 323px;
+    background-image: url(/img/your-order/texture-tab.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .your-order-section .bg-texture {
+    background-image: url(/img/your-order/texture-tab@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .your-order-section .bg-texture {
+    bottom: 0;
+    width: 289px;
+    background-image: url(/img/your-order/texture-desk.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .your-order-section .bg-texture {
+    background-image: url(/img/your-order/texture-desk@2x.png);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .your-order-section .bg-texture {
+    width: 325px;
+    background-image: url(/img/your-order/texture-desk-L.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .your-order-section .bg-texture {
+    background-image: url(/img/your-order/texture-desk-L@2x.png);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .your-order-section .bg-texture {
+    width: 325px;
+    background-image: url(/img/your-order/texture-desk-L.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .your-order-section .bg-texture {
+    background-image: url(/img/your-order/texture-desk-L@2x.png);
+  }
+}
