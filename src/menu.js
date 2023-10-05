@@ -4,9 +4,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const menu = document.getElementById('menu-backdrop');
     const closeButton = document.getElementById('close-menu');
     let initialScrollPosition = 0; // Store the initial scroll position
+    let isClickable = true; // Flag to track button clickability
 
     // Function to open the menu
     function openMenu() {
+        if (!isClickable) return; // Check if the button is clickable
+        isClickable = false; // Disable the button for the delay
+        setTimeout(() => {
+            isClickable = true; // Re-enable the button after 200 milliseconds
+        }, 200); // 200ms = 0.2 seconds
+
         burgerIcon.classList.add('is-open');
         menu.classList.add('is-open');
 
@@ -20,6 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to close the menu
     function closeMenu() {
+        if (!isClickable) return; // Check if the button is clickable
+        isClickable = false; // Disable the button for the delay
+        setTimeout(() => {
+            isClickable = true; // Re-enable the button after 200 milliseconds
+        }, 200); // 200ms = 0.2 seconds
+
         burgerIcon.classList.remove('is-open');
         menu.classList.remove('is-open');
 
@@ -49,3 +62,4 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('touchstart', closeMenuOnClick);
     });
 });
+
