@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const burgerIcon = document.getElementById('open-menu');
     const menu = document.getElementById('menu-backdrop');
     const closeButton = document.getElementById('close-menu');
+    const body = document.body;
     let initialScrollPosition = 0; // Store the initial scroll position
     let isClickable = true; // Flag to track button clickability
 
@@ -21,8 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
         initialScrollPosition = window.pageYOffset;
 
         // Prevent scrolling by setting the body to a fixed position
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${initialScrollPosition}px`;
+        body.style.position = 'fixed';
+        body.style.top = `-${initialScrollPosition}px`;
+        body.style.left = 0; // Add this line to prevent horizontal shift
+        body.style.right = 0; // Add this line to prevent horizontal shift
     }
 
     // Function to close the menu
@@ -40,8 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
         menu.classList.remove('is-open');
 
         // Re-enable scrolling by resetting body styles
-        document.body.style.position = '';
-        document.body.style.top = '';
+        body.style.position = '';
+        body.style.top = '';
+        body.style.left = ''; // Remove left property
+        body.style.right = ''; // Remove right property
         window.scrollTo(0, initialScrollPosition); // Restore the scroll position
 
         // Re-enable scroll-behavior: smooth after a delay of 500ms
@@ -77,3 +82,4 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('touchstart', closeMenuOnClick);
     });
 });
+
