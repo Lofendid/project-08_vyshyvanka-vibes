@@ -3,17 +3,30 @@ document.addEventListener('DOMContentLoaded', function () {
     const burgerIcon = document.getElementById('open-menu');
     const menu = document.getElementById('menu-backdrop');
     const closeButton = document.getElementById('close-menu');
+    let initialScrollPosition = 0; // Store the initial scroll position
 
     // Function to open the menu
     function openMenu() {
         burgerIcon.classList.add('is-open');
         menu.classList.add('is-open');
+
+        // Store the initial scroll position
+        initialScrollPosition = window.pageYOffset;
+
+        // Prevent scrolling by setting the body to a fixed position
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${initialScrollPosition}px`;
     }
 
     // Function to close the menu
     function closeMenu() {
         burgerIcon.classList.remove('is-open');
         menu.classList.remove('is-open');
+
+        // Re-enable scrolling by resetting body styles
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, initialScrollPosition); // Restore the scroll position
     }
 
     // Function to close the menu when a link is clicked or touched
