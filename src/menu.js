@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!isClickable) return; // Check if the button is clickable
         isClickable = false; // Disable the button for the delay
         setTimeout(() => {
-            isClickable = true; // Re-enable the button after 200 milliseconds
-        }, 200); // 200ms = 0.2 seconds
+            isClickable = true; // Re-enable the button after 1 second
+        }, 500); // 500ms = 0.5 second
 
         burgerIcon.classList.add('is-open');
         menu.classList.add('is-open');
@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!isClickable) return; // Check if the button is clickable
         isClickable = false; // Disable the button for the delay
         setTimeout(() => {
-            isClickable = true; // Re-enable the button after 200 milliseconds
-        }, 200); // 200ms = 0.2 seconds
+            isClickable = true; // Re-enable the button after 1 second
+        }, 500); // 500ms = 0.5 second
 
         burgerIcon.classList.remove('is-open');
         menu.classList.remove('is-open');
@@ -62,4 +62,5 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('touchstart', closeMenuOnClick);
     });
 });
+
 
