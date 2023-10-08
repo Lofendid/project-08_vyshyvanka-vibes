@@ -21,8 +21,8 @@ main {
     padding: 0 20px;
 }
 
-.bottom-padd {
-    padding-bottom: 80px;
+.top-padd {
+    padding-top: 80px;
 }
 
 .section-title {
@@ -44,8 +44,8 @@ main {
         padding: 0 32px;
     }
 
-    .bottom-padd {
-        padding-bottom: 100px;
+    .top-padd {
+        padding-top: 100px;
     }
 
     .section-title {
@@ -65,8 +65,8 @@ main {
         padding: 0 36px;
     }
 
-    .bottom-padd {
-        padding-bottom: 150px;
+    .top-padd {
+        padding-top: 150px;
     }
 }
 
