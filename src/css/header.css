@@ -27,7 +27,7 @@ header {
 }
 
 .header-sm-icon {
-  fill: #fcf9f9;
+  fill: var(--white-color);
 }
 
 .nav-header {
@@ -47,8 +47,8 @@ header {
   padding: 8px;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
-  background: rgba(252, 249, 249, 0.1);
-  transition: border 200ms ease-in-out;
+  background-color: rgba(252, 249, 249, 0.1);
+  transition: border 200ms ease-in-out, background-color 400ms ease-in-out;
 }
 
 .sm-menu-cont {
@@ -114,7 +114,8 @@ header {
   }
 
   .header-nav-link {
-    color: #fcf9f9;
+    position: relative;
+    color: var(--white-color);
     letter-spacing: var(--letter-s);
     font-weight: 400;
     transition: color 200ms ease-in-out;
@@ -125,7 +126,7 @@ header {
   }
 
   .header-phone {
-    color: var(--white, #fcf9f9);
+    color: var(--white-color);
     font-family: Manrope;
     font-size: 14px;
     font-style: normal;
@@ -140,19 +141,39 @@ header {
 
   .header-sm-link:hover,
   .header-sm-link:focus {
-    border: 1px solid #ecd979;
+    border: 1px solid var(--yellow-color);
     outline: transparent;
+    background-color: transparent;
   }
 
   .header-phone:hover,
   .header-phone:focus {
-    border: 1px solid #ecd979;
+    border: 1px solid var(--yellow-color);
     outline: transparent;
+  }
+
+  .header-nav-link::after {
+    opacity: 0;
+    content: "";
+    background-color: var(--yellow-color);
+    position: absolute;
+    top: 22px;
+    right: 23px;
+    width: 100%;
+    height: 0.1em;
+    border-radius: 50%;
+    transition: opacity 300ms ease-in-out, right 500ms ease-in-out;
   }
 
   .header-nav-link:hover,
   .header-nav-link:focus {
-    color: #ecd979;
+    color: var(--yellow-color);
+  }
+
+  .header-nav-link:hover::after,
+  .header-nav-link:focus::after {
+    right: 0;
+    opacity: 1;
   }
 
   header {

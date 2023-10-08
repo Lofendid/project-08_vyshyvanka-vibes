@@ -1,15 +1,28 @@
+.testimonials-section {
+    padding-bottom: 80px;
+}
 
 .testimonials-title {
     margin-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
+
+    .testimonials-section {
+        padding-bottom: 100px;
+    }
+
     .testimonials-list {
         display: flex;
         gap: 32px;    
     }
 }
 @media screen and (min-width: 1280px) {
+
+    .testimonials-section {
+        padding-bottom: 150px;
+    }
+
     .testimonials-list {
         gap: 26px;
     }
