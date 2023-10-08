@@ -3,8 +3,9 @@
 .about-us-section {
     background-image: url('../img/about-us/texture-mob.png');
     background-repeat: no-repeat;
-    background-position: right bottom 18px;
+    background-position: right bottom;
     background-size: 250px 408px;
+    padding-bottom: 62px;
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -19,7 +20,8 @@ screen and (min-device-pixel-radio: 2) and (max-width: 767px) {
     .about-us-section {
         background-image: url('../img/about-us/texture-tab.png');
         background-size: 369px 484px;
-        background-position: right bottom 50px;
+        background-position: right bottom;
+        padding-bottom: 50px;
     }
 }
 
@@ -35,7 +37,8 @@ screen and (min-device-pixel-radio: 2) and (min-width: 768px) {
     .about-us-section {
         background-image: url('../img/about-us/texture-desk.png');
         background-size: 385px 484px;
-        background-position: right bottom 70px;
+        background-position: right bottom;
+        padding-bottom: 80px;
     }
 }
 
